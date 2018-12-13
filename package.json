@@ -12,6 +12,7 @@
   "dependencies": {
     "@fortawesome/vue-fontawesome": "0.0.23",
     "firebase": "^5.0.4",
+    "url-parse": "^1.4.4",
     "vue": "^2.5.18",
     "vue-router": "^3.0.1",
     "vuetify": "^1.0.19"
