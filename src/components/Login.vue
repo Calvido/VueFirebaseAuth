@@ -32,10 +32,6 @@
                     prepend-icon="vpn_key">
                   </v-text-field>
                 </v-form>
-                <v-alert
-                  v-model="alert"
-                  type="error"> {{msj}}
-                </v-alert>
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
@@ -48,6 +44,19 @@
           </v-flex>
         </v-layout>
       </v-container>
+      <v-snackbar
+      v-model="alert"
+      :bottom="true"
+      :left="true"
+      :timeout="10000">
+      {{ msj }}
+      <v-btn
+        color="yellow"
+        flat
+        @click="alert = false">
+        Cerrar
+      </v-btn>
+    </v-snackbar>
     </v-content>
   </v-app>
 </template>
